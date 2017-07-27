@@ -1,0 +1,10 @@
+create table  bankemploy(username varchar(20) primary key,pass varchar(20),status varchar(20) check (status='MANAGER'or status='STAFF'));
+insert into bankemploy values ('ram','123','MANAGER');
+insert into bankemploy values ('sam','789','STAFF');
+select * from bankemploy;
+commit;
+create table  bankusers(name varchar(20) ,custid number(12) primary key,phno number(10) unique,balance number);
+insert into bankusers values ('naresh',1002,6565356754,600);
+insert into bankusers values ('suresh',1001,4464636341,500);
+select * from bankusers;
+commit;
